@@ -16,7 +16,7 @@ set(OPTION_BUILD_PDF_DOCUMENTATION OFF CACHE BOOL " " FORCE)
 
 add_subdirectory(cfltk)
 
-add_library(native-lib SHARED native-lib.cpp)
+add_library(native-lib SHARED native-lib.c)
 target_include_directories(native-lib PRIVATE cfltk/include)
 target_link_libraries(native-lib PRIVATE cfltk fltk fltk_images fltk_jpeg fltk_z fltk_png)
 target_link_libraries(native-lib PUBLIC log android)
