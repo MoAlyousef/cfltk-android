@@ -21,12 +21,12 @@ int main(void) {
     Fl_Button *b = Fl_Button_new(220, 500, 160, 80, "0");
     Fl_Window_end(w);
     Fl_Window_show(w);
-    Fl_Window_set_color(w, Color_White);
-    Fl_Button_set_color(b, Color_Magenta);
-    Fl_Button_set_label_color(b, Color_White);
+    Fl_Window_set_color(w, Fl_Color_White);
+    Fl_Button_set_color(b, Fl_Color_Magenta);
+    Fl_Button_set_label_color(b, Fl_Color_White);
     Fl_Button_clear_visible_focus(b);
-    Fl_Button_set_selection_color(b, Color_DarkMagenta);
-    Fl_Button_set_box(b, BoxType_RFlatBox);
+    Fl_Button_set_selection_color(b, Fl_Color_DarkMagenta);
+    Fl_Button_set_box(b, Fl_BoxType_RFlatBox);
     Fl_Button_set_label_size(b, 36);
     Fl_Button_set_callback(b, cb, NULL);
     return Fl_run();
