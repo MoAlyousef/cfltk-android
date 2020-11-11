@@ -1,11 +1,9 @@
 
 #include <cfl.h> // Fl_init_all, Fl_lock, Fl_run
 #include <cfl_button.h>
-#include <cfl_image.h> // Fl_register_images
 #include <cfl_window.h>
 #include <cfl_enums.h>
 #include <stdlib.h>
-#include "cfltk/include/cfl_enums.h"
 
 void cb(Fl_Widget *w, void *data) {
     char buf[8];
